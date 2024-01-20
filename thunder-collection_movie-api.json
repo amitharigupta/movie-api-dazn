@@ -1,0 +1,179 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "movie-api",
+    "dateExported": "2024-01-20T08:57:55.107Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "b46e60bf-2e38-4997-b50d-717883182c88",
+            "name": "movie",
+            "containerId": "",
+            "created": "2024-01-20T05:55:03.888Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "a3f52024-2458-4d5c-9757-5296b48acbb7",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-01-20T06:27:17.510Z",
+            "sortNum": 20000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "be58374e-a543-4089-9e7e-1548123b51e7",
+            "colId": "cdf40db7-58b7-46b3-abd1-b6061c802a53",
+            "containerId": "a3f52024-2458-4d5c-9757-5296b48acbb7",
+            "name": "get users",
+            "url": "http://localhost:4000/api/v1/user/all",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-01-20T05:49:58.947Z",
+            "modified": "2024-01-20T08:57:02.472Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "1"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "72865da4-4437-41c0-b691-8827d65f3275",
+            "colId": "cdf40db7-58b7-46b3-abd1-b6061c802a53",
+            "containerId": "b46e60bf-2e38-4997-b50d-717883182c88",
+            "name": "get movie",
+            "url": "http://localhost:4000/api/v1/movies/all",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-01-20T05:55:11.405Z",
+            "modified": "2024-01-20T07:39:25.061Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d8e2beab-43f6-4aae-a904-955b79c8e00f",
+            "colId": "cdf40db7-58b7-46b3-abd1-b6061c802a53",
+            "containerId": "a3f52024-2458-4d5c-9757-5296b48acbb7",
+            "name": "create user",
+            "url": "http://localhost:4000/api/v1/user",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-20T06:27:28.914Z",
+            "modified": "2024-01-20T08:57:30.946Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "1"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Amit \",\n  \"email\": \"amit4@gmail.com\",\n  \"photo\": \"adedwdwada\",\n  \"password\": \"123456\",\n  \"gender\": \"male\",\n  \"role\": \"admin\",\n  \"_id\": 4,\n  \"dob\": \"1996-03-21\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "63b6fe79-f9b0-4871-9e74-def24a2f1f6d",
+            "colId": "cdf40db7-58b7-46b3-abd1-b6061c802a53",
+            "containerId": "b46e60bf-2e38-4997-b50d-717883182c88",
+            "name": "movie create",
+            "url": "http://localhost:4000/api/v1/movies",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-01-20T07:03:58.814Z",
+            "modified": "2024-01-20T08:46:40.561Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "1"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Captain\",\n  \"genre\": \"Captain\",\n  \"rating\": 5,\n  \"streamingLink\": \"dakwdakwjddjkawjkdkjawdjajwbddadwdawdjawdawdbaw\",\n  \"_id\": 4\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "354868e9-f961-4e95-9ee9-0267821f3f13",
+            "colId": "cdf40db7-58b7-46b3-abd1-b6061c802a53",
+            "containerId": "b46e60bf-2e38-4997-b50d-717883182c88",
+            "name": "Delete Movie",
+            "url": "http://localhost:4000/api/v1/movies",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-01-20T07:20:53.468Z",
+            "modified": "2024-01-20T08:53:42.723Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "1"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "99a08cc9-ed50-43bf-a92b-57ccfa1520a3",
+            "colId": "cdf40db7-58b7-46b3-abd1-b6061c802a53",
+            "containerId": "b46e60bf-2e38-4997-b50d-717883182c88",
+            "name": "Update Movie",
+            "url": "http://localhost:4000/api/v1/movies?_id=3",
+            "method": "PATCH",
+            "sortNum": 50000,
+            "created": "2024-01-20T07:31:49.913Z",
+            "modified": "2024-01-20T08:54:19.199Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "1"
+                }
+            ],
+            "params": [
+                {
+                    "name": "_id",
+                    "value": "3",
+                    "isPath": false
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Marvel Loki season - 2\",\n  \"genre\": \"Marvel movies\",\n  \"rating\": 4.3,\n  \"streamingLink\": \"kjandjkawndkjnadddqq2q2dq2dqjkdnjakwndja\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9cde7432-8b7a-402c-9ff0-b10aaa05ed20",
+            "colId": "cdf40db7-58b7-46b3-abd1-b6061c802a53",
+            "containerId": "b46e60bf-2e38-4997-b50d-717883182c88",
+            "name": "Get Movie Search",
+            "url": "http://localhost:4000/api/v1/movies/search?title=Captain",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-01-20T07:44:16.258Z",
+            "modified": "2024-01-20T08:47:01.709Z",
+            "headers": [
+                {
+                    "name": "Authorization",
+                    "value": "1"
+                }
+            ],
+            "params": [
+                {
+                    "name": "title",
+                    "value": "Captain",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
